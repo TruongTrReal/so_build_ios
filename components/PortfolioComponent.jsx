@@ -49,25 +49,29 @@ const PortfolioComponent = () => {
     let totalMarketValue = 0;
     let todayChange = 0;
   
-    const modifiedPortfolio = portfolio.map(item => {
-      const averagePrice = ((item.owning_price - (item.owning_price * 0.0013)) / 1000).toFixed(2);
-      const marketPrice = (item.market_price / 1000).toFixed(2);
-      const gainLoss = ((marketPrice - averagePrice) * item.total_volume * 1000).toFixed(0);
-      const gainPercentage = (((marketPrice - averagePrice) / averagePrice) * 100);
+    if (portfolio!==undefined) {
+      const modifiedPortfolio = portfolio.map(item => {
+        const averagePrice = ((item.owning_price - (item.owning_price * 0.0013)) / 1000).toFixed(2);
+        const marketPrice = (item.market_price / 1000).toFixed(2);
+        const gainLoss = ((marketPrice - averagePrice) * item.total_volume * 1000).toFixed(0);
+        const gainPercentage = (((marketPrice - averagePrice) / averagePrice) * 100);
+    
+        totalGainLoss += parseFloat(gainLoss);
+        totalAsset += parseFloat(averagePrice * item.total_volume * 1000);
+        totalMarketValue += parseFloat(item.market_price * item.total_volume);
+        todayChange += item.total_volume * item.change;
   
-      totalGainLoss += parseFloat(gainLoss);
-      totalAsset += parseFloat(averagePrice * item.total_volume * 1000);
-      totalMarketValue += parseFloat(item.market_price * item.total_volume);
-      todayChange += item.total_volume * item.change;
+        return {
+          ...item,
+          market_price: marketPrice,
+          gainLoss: `${gainLoss >= 0 ? '+' : '-'}${formattedNumber(Math.abs(gainLoss))}`,
+          gainPercentage: `${gainPercentage >= 0 ? '+' : '-'}${formattedNumber(Math.abs(gainPercentage).toFixed(2))}%`,
+          owning_price: averagePrice,
+        };
+      });
+    }
 
-      return {
-        ...item,
-        market_price: marketPrice,
-        gainLoss: `${gainLoss >= 0 ? '+' : '-'}${formattedNumber(Math.abs(gainLoss))}`,
-        gainPercentage: `${gainPercentage >= 0 ? '+' : '-'}${formattedNumber(Math.abs(gainPercentage).toFixed(2))}%`,
-        owning_price: averagePrice,
-      };
-    });
+
 
     totalGainPercentage = (100 - ((totalAsset - totalGainLoss) / totalAsset) * 100).toFixed(2);
     return {
@@ -105,191 +109,200 @@ const PortfolioComponent = () => {
       }));
   }, [activeTab, accountNumber]);
 
-
-  const renderPortfolioItems = modifiedPortfolio.map((item, index) => (
+  let renderPortfolioItems;
+  if (modifiedPortfolio!==undefined) {
+    let renderPortfolioItems = modifiedPortfolio.map((item, index) => (
     
-    <React.Fragment key={index}>
-
-      <TouchableOpacity
-        style={[styles.portfolioItem,
-          !selectedItems[index] ? { borderBottomWidth: 0.5, borderBottomColor: '#ECECEC' } :{}
-        ]}
-        activeOpacity={1}
-        onPress={() => {
-          setSelectedItems((prevSelectedItems) => ({
-            ...prevSelectedItems,
-            [index]: !prevSelectedItems[index],
-          }));
-        }}
-
-      >
-        {/*  */}
-        <View style={[{ position: 'relative', left: width * 0, flexDirection: 'row' }]}>
-          <Text style={[styles.symbolText, { color: item.gainPercentage.startsWith('+') ? '#02ab57' : '#d93843' }]}>{item.stock_symbol}</Text>
-          <Image 
-            source={ selectedItems[index] ? require('../assets/vup.png') : require('../assets/vdown.png')}
-            resizeMode='contain'
-            style={styles.vDown}
-          />
-        </View>
-        <View style={[{ position: 'absolute', right: width * 0.68 }]}>
-          <Text style={[styles.buyingPriceText]}>{gainHiddenRedux ? item.owning_price : '***'}</Text>
-
-        </View>
-        <View style={[{ position: 'absolute', right: width * 0.53 }]}>
-          <Text style={[styles.priceText, ]}>{item.market_price}</Text>
-
-        </View>
-        <View style={[{ position: 'absolute', right: width * 0.31 }]}>
-          <Text style={[styles.sharesText, ]}>{volumeHiddenRedux ? formattedNumber(item.having_volume) : '***'}</Text>
-
-        </View>
-        {gainHiddenRedux ? 
-        <View 
-          style={[{ 
-            position: 'relative', 
-            right: width*.004,
-            width: width*0.173,
-            height: width*0.065,
-            // borderWidth: 2,
-            borderRadius: 8,
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: item.gainPercentage.startsWith('+') ? '#02ab57' : '#d93843',
-          }]}
+      <React.Fragment key={index}>
+  
+        <TouchableOpacity
+          style={[styles.portfolioItem,
+            !selectedItems[index] ? { borderBottomWidth: 0.5, borderBottomColor: '#ECECEC' } :{}
+          ]}
+          activeOpacity={1}
+          onPress={() => {
+            setSelectedItems((prevSelectedItems) => ({
+              ...prevSelectedItems,
+              [index]: !prevSelectedItems[index],
+            }));
+          }}
+  
         >
-          <Text style={[styles.gainLossText, { color: '#fff' }]}>
-            {item.gainPercentage}
-          </Text>
-        </View>
-        :
-        <View 
-          style={[{ 
-            position: 'relative', 
-            right: width*.004,
-            width: width*0.17,
-            height: height*0.04,
-            // borderWidth: 2,
-            borderRadius: 8,
-            alignItems: 'center',
-            justifyContent: 'center',
-          }]}
-        ><Text>***</Text></View>
-        }
-
-      </TouchableOpacity>
-
-      {/* Conditionally render the detail view below the selected item */}
-      {selectedItems[index] && (
-        <View style={styles.detailContainer}>
-
-          {/* first row  */}
-          <View style={styles.firstRowBox}>
-            <View  style={styles.firstRowCol}>
-              <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>Tổng vốn</Text>
-              <Text style={[{fontWeight: '400', fontSize: 13, marginTop: 5,}]}>{gainHiddenRedux ? formattedNumber((1000*item.total_volume*item.owning_price).toFixed(0)) : '***'}</Text>
-            </View>
-            <View style={styles.firstRowCol}>
-              <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>Giá trị thị trường</Text>
-              <Text style={[{fontWeight: '400', fontSize: 13, marginTop: 5}]}>{gainHiddenRedux ? formattedNumber((1000*item.total_volume*item.market_price).toFixed(0)) : '***'}</Text>
-            </View>
-            <View style={styles.firstRowCol}>
-              <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>Lãi / lỗ</Text>
-              {gainHiddenRedux ? 
-              <Text style={[{fontWeight: '400', fontSize: 13, marginTop: 5, color: item.gainLoss.startsWith('+') ? '#07ba5b' : '#ff424e'}]}>
-                {formattedNumber(item.gainLoss)}
-              </Text>
-              : <Text style={[{fontWeight: '400', fontSize: 13, marginTop: 5}]}>
-                ***
-              </Text>
-            }
-            </View>
+          {/*  */}
+          <View style={[{ position: 'relative', left: width * 0, flexDirection: 'row' }]}>
+            <Text style={[styles.symbolText, { color: item.gainPercentage.startsWith('+') ? '#02ab57' : '#d93843' }]}>{item.stock_symbol}</Text>
+            <Image 
+              source={ selectedItems[index] ? require('../assets/vup.png') : require('../assets/vdown.png')}
+              resizeMode='contain'
+              style={styles.vDown}
+            />
           </View>
-          
-          {/* second row  */}
-          <View style={styles.secondRowBox}>
-
-            {/* top box  */}
-            <View style={styles.secondRowBox_1}>
-              <View style={styles.line_rows}>
-                <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>Tổng KL</Text>
-                <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.total_volume) : '***'}</Text>
+          <View style={[{ position: 'absolute', right: width * 0.68 }]}>
+            <Text style={[styles.buyingPriceText]}>{gainHiddenRedux ? item.owning_price : '***'}</Text>
+  
+          </View>
+          <View style={[{ position: 'absolute', right: width * 0.53 }]}>
+            <Text style={[styles.priceText, ]}>{item.market_price}</Text>
+  
+          </View>
+          <View style={[{ position: 'absolute', right: width * 0.31 }]}>
+            <Text style={[styles.sharesText, ]}>{volumeHiddenRedux ? formattedNumber(item.having_volume) : '***'}</Text>
+  
+          </View>
+          {gainHiddenRedux ? 
+          <View 
+            style={[{ 
+              position: 'relative', 
+              right: width*.004,
+              width: width*0.173,
+              height: width*0.065,
+              // borderWidth: 2,
+              borderRadius: 8,
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: item.gainPercentage.startsWith('+') ? '#02ab57' : '#d93843',
+            }]}
+          >
+            <Text style={[styles.gainLossText, { color: '#fff' }]}>
+              {item.gainPercentage}
+            </Text>
+          </View>
+          :
+          <View 
+            style={[{ 
+              position: 'relative', 
+              right: width*.004,
+              width: width*0.17,
+              height: height*0.04,
+              // borderWidth: 2,
+              borderRadius: 8,
+              alignItems: 'center',
+              justifyContent: 'center',
+            }]}
+          ><Text>***</Text></View>
+          }
+  
+        </TouchableOpacity>
+  
+        {/* Conditionally render the detail view below the selected item */}
+        {selectedItems[index] && (
+          <View style={styles.detailContainer}>
+  
+            {/* first row  */}
+            <View style={styles.firstRowBox}>
+              <View  style={styles.firstRowCol}>
+                <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>Tổng vốn</Text>
+                <Text style={[{fontWeight: '400', fontSize: 13, marginTop: 5,}]}>{gainHiddenRedux ? formattedNumber((1000*item.total_volume*item.owning_price).toFixed(0)) : '***'}</Text>
               </View>
-              <View style={styles.line_rows}>
-                <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL thường</Text>
-                <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.having_volume) : '***'}</Text>
+              <View style={styles.firstRowCol}>
+                <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>Giá trị thị trường</Text>
+                <Text style={[{fontWeight: '400', fontSize: 13, marginTop: 5}]}>{gainHiddenRedux ? formattedNumber((1000*item.total_volume*item.market_price).toFixed(0)) : '***'}</Text>
               </View>
-              <View style={styles.line_rows}>
-                <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL FS</Text>
-                <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.FS_volume) : '***'}</Text>
-              </View>
-              <View style={styles.line_rows}>
-                <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL khả dụng</Text>
-                <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.having_volume) : '***'}</Text>
-              </View>
-              <View style={styles.line_rows}>
-                <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>Outroom</Text>
-                <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.Outroom_volume) : '***'}</Text>
+              <View style={styles.firstRowCol}>
+                <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>Lãi / lỗ</Text>
+                {gainHiddenRedux ? 
+                <Text style={[{fontWeight: '400', fontSize: 13, marginTop: 5, color: item.gainLoss.startsWith('+') ? '#07ba5b' : '#ff424e'}]}>
+                  {formattedNumber(item.gainLoss)}
+                </Text>
+                : <Text style={[{fontWeight: '400', fontSize: 13, marginTop: 5}]}>
+                  ***
+                </Text>
+              }
               </View>
             </View>
-
-            {/* bottom box  */}
-            <View  style={styles.secondRowBox_2}>
-              <View  style={styles.secondRowBox_2a}>
+            
+            {/* second row  */}
+            <View style={styles.secondRowBox}>
+  
+              {/* top box  */}
+              <View style={styles.secondRowBox_1}>
                 <View style={styles.line_rows}>
-                  <View style={{flexDirection: 'row'}}>
-                    <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL Khác</Text>
-                    <Image 
-                      source={require('../assets/detail2.jpg')}
-                      resizeMode='contain'
-                      style={{
-                        width: 14,
-                        height:14,
-                        marginLeft: 5,
-                      }}
-                    />
+                  <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>Tổng KL</Text>
+                  <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.total_volume) : '***'}</Text>
+                </View>
+                <View style={styles.line_rows}>
+                  <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL thường</Text>
+                  <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.having_volume) : '***'}</Text>
+                </View>
+                <View style={styles.line_rows}>
+                  <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL FS</Text>
+                  <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.FS_volume) : '***'}</Text>
+                </View>
+                <View style={styles.line_rows}>
+                  <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL khả dụng</Text>
+                  <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.having_volume) : '***'}</Text>
+                </View>
+                <View style={styles.line_rows}>
+                  <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>Outroom</Text>
+                  <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.Outroom_volume) : '***'}</Text>
+                </View>
+              </View>
+  
+              {/* bottom box  */}
+              <View  style={styles.secondRowBox_2}>
+                <View  style={styles.secondRowBox_2a}>
+                  <View style={styles.line_rows}>
+                    <View style={{flexDirection: 'row'}}>
+                      <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL Khác</Text>
+                      <Image 
+                        source={require('../assets/detail2.jpg')}
+                        resizeMode='contain'
+                        style={{
+                          width: 14,
+                          height:14,
+                          marginLeft: 5,
+                        }}
+                      />
+                    </View>
+                    <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.other_volume) : '***'}</Text>
                   </View>
-                  <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.other_volume) : '***'}</Text>
+                  <View style={styles.line_rows}>
+                    <Text style={[{fontWeight: '300', fontSize: 12, color: '#676770' }]}>CPCT/Thưởng</Text>
+                    <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.reward_volume) : '***'}</Text>
+                  </View>
                 </View>
-                <View style={styles.line_rows}>
-                  <Text style={[{fontWeight: '300', fontSize: 12, color: '#676770' }]}>CPCT/Thưởng</Text>
-                  <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.reward_volume) : '***'}</Text>
-                </View>
-              </View>
-
-              <View  style={styles.secondRowBox_2b}>
-                <Text  style={[{fontWeight: '400', fontSize: 13}]}>KL mua chờ về</Text>
-                <View style={styles.line_rows}>
-                  <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL T0</Text>
-                  <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.t0_volume) : '***'}</Text>
-                </View>
-                <View style={styles.line_rows}>
-                  <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL T1</Text>
-                  <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.t1_volume) : '***'}</Text>
-                </View>
-                <View style={styles.line_rows}>
-                  <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL T2</Text>
-                  <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.t2_volume): '***'}</Text>
+  
+                <View  style={styles.secondRowBox_2b}>
+                  <Text  style={[{fontWeight: '400', fontSize: 13}]}>KL mua chờ về</Text>
+                  <View style={styles.line_rows}>
+                    <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL T0</Text>
+                    <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.t0_volume) : '***'}</Text>
+                  </View>
+                  <View style={styles.line_rows}>
+                    <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL T1</Text>
+                    <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.t1_volume) : '***'}</Text>
+                  </View>
+                  <View style={styles.line_rows}>
+                    <Text style={[{fontWeight: '300', fontSize: 13, color: '#676770' }]}>KL T2</Text>
+                    <Text style={[{fontWeight: '400', fontSize: 13}]}>{volumeHiddenRedux ? formattedNumber(item.t2_volume): '***'}</Text>
+                  </View>
                 </View>
               </View>
             </View>
+  
+            <View style={styles.buttons_row}>
+              <TouchableOpacity activeOpacity={1} style={[styles.buttonInRow, { borderColor: '#0baf5d' }]}>
+                <Text style={{fontSize: 13, fontWeight: '400', color: '#0baf5d'}}>Mua</Text>
+              </TouchableOpacity>
+              <TouchableOpacity activeOpacity={1} style={[styles.buttonInRow, { borderColor: '#d93843' }]}>
+                <Text style={{fontSize: 13, fontWeight: '400', color: '#d93843'}}>Bán</Text>
+              </TouchableOpacity>
+              <TouchableOpacity activeOpacity={1} style={[styles.buttonInRow, { borderColor: '#656565' }]}>
+                <Text style={{fontSize: 13, fontWeight: '400', color: '#656565'}}>Thông tin mã</Text>
+              </TouchableOpacity>
+            </View>
           </View>
+        )}
+      </React.Fragment>
+    ));
+  } else {
+    let renderPortfolioItems = () => {
+      return (
+        <View></View>
+      )
+    }
+  }
 
-          <View style={styles.buttons_row}>
-            <TouchableOpacity activeOpacity={1} style={[styles.buttonInRow, { borderColor: '#0baf5d' }]}>
-              <Text style={{fontSize: 13, fontWeight: '400', color: '#0baf5d'}}>Mua</Text>
-            </TouchableOpacity>
-            <TouchableOpacity activeOpacity={1} style={[styles.buttonInRow, { borderColor: '#d93843' }]}>
-              <Text style={{fontSize: 13, fontWeight: '400', color: '#d93843'}}>Bán</Text>
-            </TouchableOpacity>
-            <TouchableOpacity activeOpacity={1} style={[styles.buttonInRow, { borderColor: '#656565' }]}>
-              <Text style={{fontSize: 13, fontWeight: '400', color: '#656565'}}>Thông tin mã</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-      )}
-    </React.Fragment>
-  ));
 
   return (
     <View style={styles.container}>

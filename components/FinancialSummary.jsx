@@ -38,6 +38,18 @@ const FinancialSummary = () => {
     setContentHidden(prevState => !prevState);
   };
 
+  const handleSummary = (x) => {
+    if (x==undefined) {
+      return fakedata = {
+        total_asset: 0,
+        total_cash: 0,
+        margin_ratio: 100
+      };
+    } else {
+      return x
+    }
+  };
+
   let imageSource, opaTrangthai, opaAntoan;
 
   if (activeTab === '1') {
@@ -83,9 +95,9 @@ const FinancialSummary = () => {
                   />
               </TouchableWithoutFeedback>
             </View>
-            <Text style={styles.amount}>{isContentHidden ? '***' : formattedNumber(summary.total_asset ?? 0) + ' VND'}</Text>
+            <Text style={styles.amount}>{isContentHidden ? '***' : formattedNumber(handleSummary(summary).total_asset ?? 0) + ' VND'}</Text>
             <Text style={styles.subTitle}>Sức mua</Text>
-            <Text style={styles.subAmount}>{isContentHidden ? '***' : formattedNumber(summary.total_cash ?? 0) + ' VND'}</Text>
+            <Text style={styles.subAmount}>{isContentHidden ? '***' : formattedNumber(handleSummary(summary).total_cash ?? 0) + ' VND'}</Text>
           </View>
           <View style={styles.actionColumn}>
             <TouchableOpacity style={{opacity: 1}}>
@@ -102,7 +114,7 @@ const FinancialSummary = () => {
                 right: 0,
                 marginTop: 61,
               }}>
-                <Text style={{fontWeight: '500', fontSize: 16, color: '#33a463'}}>{(summary.margin_ratio ?? 100).toFixed(2)}% - An toàn</Text>
+                <Text style={{fontWeight: '500', fontSize: 16, color: '#33a463'}}>{(handleSummary(summary).margin_ratio ?? 100).toFixed(2)}% - An toàn</Text>
                 <Image style={styles.saveRatioButton} source={require("../assets/save_ratio.jpg")}/>
               </View>
 
