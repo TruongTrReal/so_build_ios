@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default /^url\\(#(.+?)\\)$/;","map":{"version":3,"names":[],"sources":["C:/Users/truon/OneDrive/Projects/so_rebuild/so/node_modules/react-native-svg/lib/extract/patternReg.js"],"sourcesContent":["export default /^url\\(#(.+?)\\)$/;\n"],"mappings":"AAAA,eAAe,iBAAiB"},"metadata":{},"sourceType":"module","externalDependencies":[]}
