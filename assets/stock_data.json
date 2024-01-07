@@ -1,0 +1,2045 @@
+[
+    {
+        "time": 1702260900000,
+        "open": 1124440,
+        "high": 1128510,
+        "low": 1124440,
+        "close": 1128060,
+        "volume": 8695800,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702260960000,
+        "open": 1128060,
+        "high": 1128560,
+        "low": 1128060,
+        "close": 1128500,
+        "volume": 2943400,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261020000,
+        "open": 1128190,
+        "high": 1128780,
+        "low": 1128030,
+        "close": 1128780,
+        "volume": 2619600,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261080000,
+        "open": 1129040,
+        "high": 1129150,
+        "low": 1128460,
+        "close": 1128520,
+        "volume": 3883900,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261140000,
+        "open": 1128530,
+        "high": 1128690,
+        "low": 1128390,
+        "close": 1128420,
+        "volume": 4672300,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261200000,
+        "open": 1128400,
+        "high": 1128400,
+        "low": 1127870,
+        "close": 1127870,
+        "volume": 3779500,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261260000,
+        "open": 1127700,
+        "high": 1127900,
+        "low": 1127680,
+        "close": 1127770,
+        "volume": 3272100,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261320000,
+        "open": 1127780,
+        "high": 1127870,
+        "low": 1127430,
+        "close": 1127430,
+        "volume": 3228600,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261380000,
+        "open": 1127450,
+        "high": 1127930,
+        "low": 1127400,
+        "close": 1127810,
+        "volume": 3261100,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261440000,
+        "open": 1127690,
+        "high": 1127800,
+        "low": 1127440,
+        "close": 1127440,
+        "volume": 2755200,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261500000,
+        "open": 1127450,
+        "high": 1127730,
+        "low": 1127430,
+        "close": 1127630,
+        "volume": 2518300,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261560000,
+        "open": 1127590,
+        "high": 1128020,
+        "low": 1127530,
+        "close": 1127960,
+        "volume": 2673800,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261620000,
+        "open": 1128020,
+        "high": 1128080,
+        "low": 1127290,
+        "close": 1127640,
+        "volume": 2685600,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261680000,
+        "open": 1127770,
+        "high": 1128220,
+        "low": 1127770,
+        "close": 1128030,
+        "volume": 3197700,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261740000,
+        "open": 1128170,
+        "high": 1128170,
+        "low": 1127350,
+        "close": 1127620,
+        "volume": 2686500,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261800000,
+        "open": 1127770,
+        "high": 1128170,
+        "low": 1127590,
+        "close": 1128170,
+        "volume": 2918000,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261860000,
+        "open": 1128210,
+        "high": 1128210,
+        "low": 1127780,
+        "close": 1128070,
+        "volume": 2805300,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261920000,
+        "open": 1128160,
+        "high": 1128670,
+        "low": 1128130,
+        "close": 1128510,
+        "volume": 2673300,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702261980000,
+        "open": 1128750,
+        "high": 1128760,
+        "low": 1128540,
+        "close": 1128740,
+        "volume": 2480100,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262040000,
+        "open": 1128790,
+        "high": 1128790,
+        "low": 1127580,
+        "close": 1127580,
+        "volume": 2882200,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262100000,
+        "open": 1128130,
+        "high": 1128130,
+        "low": 1127480,
+        "close": 1127950,
+        "volume": 2849604,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262160000,
+        "open": 1128020,
+        "high": 1128200,
+        "low": 1127450,
+        "close": 1127930,
+        "volume": 3036000,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262220000,
+        "open": 1127900,
+        "high": 1127990,
+        "low": 1127420,
+        "close": 1127470,
+        "volume": 3340896,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262280000,
+        "open": 1127680,
+        "high": 1127880,
+        "low": 1127460,
+        "close": 1127830,
+        "volume": 2488496,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262340000,
+        "open": 1127720,
+        "high": 1127960,
+        "low": 1127340,
+        "close": 1127390,
+        "volume": 2630000,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262400000,
+        "open": 1127550,
+        "high": 1127550,
+        "low": 1126700,
+        "close": 1127380,
+        "volume": 2752608,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262460000,
+        "open": 1127190,
+        "high": 1127390,
+        "low": 1126580,
+        "close": 1126700,
+        "volume": 2537296,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262520000,
+        "open": 1126630,
+        "high": 1126830,
+        "low": 1126600,
+        "close": 1126600,
+        "volume": 2973104,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262580000,
+        "open": 1126640,
+        "high": 1126820,
+        "low": 1126410,
+        "close": 1126660,
+        "volume": 2656296,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262640000,
+        "open": 1126550,
+        "high": 1126730,
+        "low": 1125940,
+        "close": 1126250,
+        "volume": 2975800,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262700000,
+        "open": 1126350,
+        "high": 1126380,
+        "low": 1125600,
+        "close": 1125600,
+        "volume": 4404496,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262760000,
+        "open": 1125540,
+        "high": 1125730,
+        "low": 1125160,
+        "close": 1125500,
+        "volume": 4306104,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262820000,
+        "open": 1125540,
+        "high": 1125540,
+        "low": 1124590,
+        "close": 1124600,
+        "volume": 4029304,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262880000,
+        "open": 1124710,
+        "high": 1125020,
+        "low": 1124530,
+        "close": 1124610,
+        "volume": 4675392,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702262940000,
+        "open": 1124520,
+        "high": 1124860,
+        "low": 1124030,
+        "close": 1124030,
+        "volume": 3575200,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263000000,
+        "open": 1123970,
+        "high": 1124340,
+        "low": 1123680,
+        "close": 1124030,
+        "volume": 3251304,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263060000,
+        "open": 1124070,
+        "high": 1124070,
+        "low": 1123730,
+        "close": 1123730,
+        "volume": 4057800,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263120000,
+        "open": 1123820,
+        "high": 1124070,
+        "low": 1123740,
+        "close": 1124070,
+        "volume": 4067600,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263180000,
+        "open": 1124060,
+        "high": 1124390,
+        "low": 1124060,
+        "close": 1124370,
+        "volume": 3227400,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263240000,
+        "open": 1124380,
+        "high": 1124380,
+        "low": 1124010,
+        "close": 1124040,
+        "volume": 3331096,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263300000,
+        "open": 1124050,
+        "high": 1124340,
+        "low": 1124050,
+        "close": 1124340,
+        "volume": 2915808,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263360000,
+        "open": 1124380,
+        "high": 1124600,
+        "low": 1124210,
+        "close": 1124600,
+        "volume": 2488192,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263420000,
+        "open": 1124650,
+        "high": 1125350,
+        "low": 1124520,
+        "close": 1125350,
+        "volume": 2901712,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263480000,
+        "open": 1125230,
+        "high": 1125230,
+        "low": 1124510,
+        "close": 1125050,
+        "volume": 4175792,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263540000,
+        "open": 1125040,
+        "high": 1125370,
+        "low": 1125020,
+        "close": 1125370,
+        "volume": 1883696,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263600000,
+        "open": 1125220,
+        "high": 1125490,
+        "low": 1125190,
+        "close": 1125380,
+        "volume": 2597600,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263660000,
+        "open": 1125460,
+        "high": 1125470,
+        "low": 1125200,
+        "close": 1125200,
+        "volume": 1672704,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263720000,
+        "open": 1125160,
+        "high": 1125320,
+        "low": 1124620,
+        "close": 1125040,
+        "volume": 2332496,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263780000,
+        "open": 1124890,
+        "high": 1125140,
+        "low": 1124890,
+        "close": 1125000,
+        "volume": 1849008,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263840000,
+        "open": 1125030,
+        "high": 1125340,
+        "low": 1124920,
+        "close": 1124970,
+        "volume": 1560000,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263900000,
+        "open": 1125080,
+        "high": 1125260,
+        "low": 1124900,
+        "close": 1125130,
+        "volume": 1205504,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702263960000,
+        "open": 1125140,
+        "high": 1125220,
+        "low": 1125070,
+        "close": 1125120,
+        "volume": 1221792,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264020000,
+        "open": 1125120,
+        "high": 1125240,
+        "low": 1124810,
+        "close": 1125070,
+        "volume": 1503200,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264080000,
+        "open": 1125020,
+        "high": 1125020,
+        "low": 1124750,
+        "close": 1124760,
+        "volume": 1061296,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264140000,
+        "open": 1124750,
+        "high": 1124960,
+        "low": 1124750,
+        "close": 1124850,
+        "volume": 1321712,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264200000,
+        "open": 1124800,
+        "high": 1125190,
+        "low": 1124790,
+        "close": 1125090,
+        "volume": 1116688,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264260000,
+        "open": 1125090,
+        "high": 1125120,
+        "low": 1124870,
+        "close": 1125120,
+        "volume": 1147808,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264320000,
+        "open": 1125020,
+        "high": 1125070,
+        "low": 1124950,
+        "close": 1125060,
+        "volume": 1169296,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264380000,
+        "open": 1124970,
+        "high": 1125290,
+        "low": 1124970,
+        "close": 1125250,
+        "volume": 4601504,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264440000,
+        "open": 1125350,
+        "high": 1125450,
+        "low": 1125130,
+        "close": 1125210,
+        "volume": 1809392,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264500000,
+        "open": 1125250,
+        "high": 1125250,
+        "low": 1124970,
+        "close": 1125200,
+        "volume": 1821408,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264560000,
+        "open": 1125120,
+        "high": 1125360,
+        "low": 1125120,
+        "close": 1125160,
+        "volume": 4994496,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264620000,
+        "open": 1125150,
+        "high": 1125350,
+        "low": 1124930,
+        "close": 1125150,
+        "volume": 1373808,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264680000,
+        "open": 1125050,
+        "high": 1125050,
+        "low": 1124540,
+        "close": 1124740,
+        "volume": 1799392,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264740000,
+        "open": 1124810,
+        "high": 1124820,
+        "low": 1124450,
+        "close": 1124450,
+        "volume": 1364608,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264800000,
+        "open": 1124310,
+        "high": 1124550,
+        "low": 1124280,
+        "close": 1124510,
+        "volume": 1848000,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264860000,
+        "open": 1124620,
+        "high": 1124620,
+        "low": 1124100,
+        "close": 1124220,
+        "volume": 3335888,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264920000,
+        "open": 1124290,
+        "high": 1124320,
+        "low": 1124130,
+        "close": 1124290,
+        "volume": 2957008,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702264980000,
+        "open": 1124300,
+        "high": 1124300,
+        "low": 1123800,
+        "close": 1124150,
+        "volume": 1822304,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265040000,
+        "open": 1124150,
+        "high": 1124150,
+        "low": 1123850,
+        "close": 1123850,
+        "volume": 2273392,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265100000,
+        "open": 1123810,
+        "high": 1123870,
+        "low": 1123540,
+        "close": 1123550,
+        "volume": 2795792,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265160000,
+        "open": 1123650,
+        "high": 1123650,
+        "low": 1123280,
+        "close": 1123340,
+        "volume": 2889216,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265220000,
+        "open": 1123350,
+        "high": 1123350,
+        "low": 1123190,
+        "close": 1123340,
+        "volume": 1953696,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265280000,
+        "open": 1123340,
+        "high": 1123340,
+        "low": 1123140,
+        "close": 1123190,
+        "volume": 1670800,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265340000,
+        "open": 1123120,
+        "high": 1123320,
+        "low": 1123030,
+        "close": 1123030,
+        "volume": 1935392,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265400000,
+        "open": 1122880,
+        "high": 1123030,
+        "low": 1122880,
+        "close": 1122980,
+        "volume": 2239904,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265460000,
+        "open": 1123090,
+        "high": 1123270,
+        "low": 1122850,
+        "close": 1122850,
+        "volume": 1924800,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265520000,
+        "open": 1122900,
+        "high": 1123050,
+        "low": 1122900,
+        "close": 1123020,
+        "volume": 1290704,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265580000,
+        "open": 1122970,
+        "high": 1122970,
+        "low": 1122720,
+        "close": 1122790,
+        "volume": 1162096,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265640000,
+        "open": 1122770,
+        "high": 1123050,
+        "low": 1122770,
+        "close": 1122920,
+        "volume": 1735504,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265700000,
+        "open": 1122980,
+        "high": 1123070,
+        "low": 1122920,
+        "close": 1123010,
+        "volume": 4018592,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265760000,
+        "open": 1123090,
+        "high": 1123190,
+        "low": 1123000,
+        "close": 1123000,
+        "volume": 1592608,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265820000,
+        "open": 1123040,
+        "high": 1123200,
+        "low": 1123020,
+        "close": 1123200,
+        "volume": 1464096,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265880000,
+        "open": 1123160,
+        "high": 1123230,
+        "low": 1123150,
+        "close": 1123220,
+        "volume": 1243600,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702265940000,
+        "open": 1123270,
+        "high": 1123520,
+        "low": 1123230,
+        "close": 1123440,
+        "volume": 1381008,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266000000,
+        "open": 1123450,
+        "high": 1123560,
+        "low": 1123380,
+        "close": 1123500,
+        "volume": 1477488,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266060000,
+        "open": 1123330,
+        "high": 1123800,
+        "low": 1123330,
+        "close": 1123780,
+        "volume": 2260608,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266120000,
+        "open": 1123810,
+        "high": 1123810,
+        "low": 1123440,
+        "close": 1123440,
+        "volume": 1321600,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266180000,
+        "open": 1123470,
+        "high": 1123590,
+        "low": 1123390,
+        "close": 1123420,
+        "volume": 674496,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266240000,
+        "open": 1123460,
+        "high": 1123910,
+        "low": 1123440,
+        "close": 1123440,
+        "volume": 1478400,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266300000,
+        "open": 1123020,
+        "high": 1123520,
+        "low": 1123020,
+        "close": 1123430,
+        "volume": 1326400,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266360000,
+        "open": 1123460,
+        "high": 1123640,
+        "low": 1123460,
+        "close": 1123620,
+        "volume": 927408,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266420000,
+        "open": 1123600,
+        "high": 1123670,
+        "low": 1123430,
+        "close": 1123670,
+        "volume": 898992,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266480000,
+        "open": 1123760,
+        "high": 1123760,
+        "low": 1123580,
+        "close": 1123600,
+        "volume": 1108304,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266540000,
+        "open": 1123700,
+        "high": 1123700,
+        "low": 1123480,
+        "close": 1123610,
+        "volume": 1326800,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266600000,
+        "open": 1123580,
+        "high": 1123640,
+        "low": 1123010,
+        "close": 1123010,
+        "volume": 1087088,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266660000,
+        "open": 1123030,
+        "high": 1123480,
+        "low": 1122990,
+        "close": 1122990,
+        "volume": 1555408,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266720000,
+        "open": 1123290,
+        "high": 1123520,
+        "low": 1123120,
+        "close": 1123120,
+        "volume": 1846800,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266780000,
+        "open": 1123170,
+        "high": 1123210,
+        "low": 1122970,
+        "close": 1123110,
+        "volume": 1583600,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266840000,
+        "open": 1123000,
+        "high": 1123110,
+        "low": 1122830,
+        "close": 1122900,
+        "volume": 1263296,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266900000,
+        "open": 1123000,
+        "high": 1123020,
+        "low": 1122910,
+        "close": 1122910,
+        "volume": 1238704,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702266960000,
+        "open": 1122940,
+        "high": 1123260,
+        "low": 1122750,
+        "close": 1123050,
+        "volume": 1022496,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267020000,
+        "open": 1123000,
+        "high": 1123070,
+        "low": 1122970,
+        "close": 1123010,
+        "volume": 1388000,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267080000,
+        "open": 1123060,
+        "high": 1123060,
+        "low": 1122710,
+        "close": 1122840,
+        "volume": 1224800,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267140000,
+        "open": 1122970,
+        "high": 1123050,
+        "low": 1122960,
+        "close": 1123050,
+        "volume": 1425600,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267200000,
+        "open": 1123040,
+        "high": 1123140,
+        "low": 1122920,
+        "close": 1122990,
+        "volume": 3758400,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267260000,
+        "open": 1122980,
+        "high": 1123210,
+        "low": 1122870,
+        "close": 1122930,
+        "volume": 1701808,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267320000,
+        "open": 1122890,
+        "high": 1123000,
+        "low": 1122880,
+        "close": 1123000,
+        "volume": 1270992,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267380000,
+        "open": 1122950,
+        "high": 1123250,
+        "low": 1122910,
+        "close": 1122980,
+        "volume": 1191104,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267440000,
+        "open": 1123050,
+        "high": 1123220,
+        "low": 1122990,
+        "close": 1123220,
+        "volume": 903904,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267500000,
+        "open": 1123280,
+        "high": 1123390,
+        "low": 1123180,
+        "close": 1123230,
+        "volume": 778304,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267560000,
+        "open": 1123280,
+        "high": 1123620,
+        "low": 1123240,
+        "close": 1123620,
+        "volume": 1126992,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267620000,
+        "open": 1123520,
+        "high": 1123520,
+        "low": 1123330,
+        "close": 1123340,
+        "volume": 1458400,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267680000,
+        "open": 1123180,
+        "high": 1123510,
+        "low": 1123180,
+        "close": 1123390,
+        "volume": 1178192,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267740000,
+        "open": 1123410,
+        "high": 1123780,
+        "low": 1123410,
+        "close": 1123740,
+        "volume": 1043008,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267800000,
+        "open": 1123690,
+        "high": 1123830,
+        "low": 1123380,
+        "close": 1123650,
+        "volume": 1167200,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267860000,
+        "open": 1123830,
+        "high": 1124080,
+        "low": 1123800,
+        "close": 1123870,
+        "volume": 1918208,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267920000,
+        "open": 1123950,
+        "high": 1124090,
+        "low": 1123670,
+        "close": 1124040,
+        "volume": 1338304,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702267980000,
+        "open": 1123480,
+        "high": 1123640,
+        "low": 1123070,
+        "close": 1123420,
+        "volume": 2083392,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268040000,
+        "open": 1123250,
+        "high": 1123430,
+        "low": 1123060,
+        "close": 1123410,
+        "volume": 2113088,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268100000,
+        "open": 1123380,
+        "high": 1123580,
+        "low": 1123360,
+        "close": 1123580,
+        "volume": 1409120,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268160000,
+        "open": 1123640,
+        "high": 1123640,
+        "low": 1123340,
+        "close": 1123380,
+        "volume": 1158272,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268220000,
+        "open": 1123360,
+        "high": 1123690,
+        "low": 1123360,
+        "close": 1123690,
+        "volume": 1138912,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268280000,
+        "open": 1123660,
+        "high": 1123940,
+        "low": 1123590,
+        "close": 1123900,
+        "volume": 965088,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268340000,
+        "open": 1123770,
+        "high": 1123770,
+        "low": 1123470,
+        "close": 1123640,
+        "volume": 1864128,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268400000,
+        "open": 1123600,
+        "high": 1123790,
+        "low": 1123540,
+        "close": 1123720,
+        "volume": 1810304,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268460000,
+        "open": 1123760,
+        "high": 1123790,
+        "low": 1123520,
+        "close": 1123750,
+        "volume": 1089184,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268520000,
+        "open": 1123830,
+        "high": 1123830,
+        "low": 1123550,
+        "close": 1123630,
+        "volume": 1227296,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268580000,
+        "open": 1123590,
+        "high": 1123600,
+        "low": 1123280,
+        "close": 1123350,
+        "volume": 880704,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268640000,
+        "open": 1123330,
+        "high": 1123640,
+        "low": 1123330,
+        "close": 1123610,
+        "volume": 2378592,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268700000,
+        "open": 1123670,
+        "high": 1123840,
+        "low": 1123580,
+        "close": 1123840,
+        "volume": 719392,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268760000,
+        "open": 1123870,
+        "high": 1123970,
+        "low": 1123610,
+        "close": 1123610,
+        "volume": 1114208,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268820000,
+        "open": 1123600,
+        "high": 1123720,
+        "low": 1123500,
+        "close": 1123500,
+        "volume": 1170816,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268880000,
+        "open": 1123540,
+        "high": 1123570,
+        "low": 1123320,
+        "close": 1123320,
+        "volume": 960000,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702268940000,
+        "open": 1123360,
+        "high": 1123360,
+        "low": 1123360,
+        "close": 1123360,
+        "volume": 78112,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702274400000,
+        "open": 1122780,
+        "high": 1122780,
+        "low": 1122130,
+        "close": 1122130,
+        "volume": 6982688,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702274460000,
+        "open": 1122140,
+        "high": 1122170,
+        "low": 1121660,
+        "close": 1121710,
+        "volume": 3500000,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702274520000,
+        "open": 1121660,
+        "high": 1121800,
+        "low": 1121520,
+        "close": 1121680,
+        "volume": 4384000,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702274580000,
+        "open": 1121570,
+        "high": 1121810,
+        "low": 1121390,
+        "close": 1121390,
+        "volume": 2921504,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702274640000,
+        "open": 1121390,
+        "high": 1121390,
+        "low": 1121150,
+        "close": 1121290,
+        "volume": 3148608,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702274700000,
+        "open": 1121340,
+        "high": 1121440,
+        "low": 1121260,
+        "close": 1121360,
+        "volume": 3744704,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702274760000,
+        "open": 1121160,
+        "high": 1121430,
+        "low": 1121070,
+        "close": 1121380,
+        "volume": 3873280,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702274820000,
+        "open": 1121270,
+        "high": 1121270,
+        "low": 1120800,
+        "close": 1120800,
+        "volume": 6297344,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702274880000,
+        "open": 1120730,
+        "high": 1121040,
+        "low": 1120730,
+        "close": 1120940,
+        "volume": 3282912,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702274940000,
+        "open": 1120900,
+        "high": 1121170,
+        "low": 1120850,
+        "close": 1121090,
+        "volume": 4698400,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275000000,
+        "open": 1121140,
+        "high": 1121500,
+        "low": 1121110,
+        "close": 1121500,
+        "volume": 4379680,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275060000,
+        "open": 1121470,
+        "high": 1122100,
+        "low": 1121380,
+        "close": 1122100,
+        "volume": 3145600,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275120000,
+        "open": 1122020,
+        "high": 1122460,
+        "low": 1122020,
+        "close": 1122270,
+        "volume": 5130592,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275180000,
+        "open": 1122280,
+        "high": 1122780,
+        "low": 1122180,
+        "close": 1122720,
+        "volume": 3604320,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275240000,
+        "open": 1122750,
+        "high": 1123030,
+        "low": 1122710,
+        "close": 1122970,
+        "volume": 3466880,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275300000,
+        "open": 1123080,
+        "high": 1123080,
+        "low": 1122950,
+        "close": 1122970,
+        "volume": 2927328,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275360000,
+        "open": 1123000,
+        "high": 1123230,
+        "low": 1122940,
+        "close": 1123020,
+        "volume": 2957888,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275420000,
+        "open": 1123010,
+        "high": 1123610,
+        "low": 1123010,
+        "close": 1123570,
+        "volume": 2779392,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275480000,
+        "open": 1123610,
+        "high": 1123610,
+        "low": 1123250,
+        "close": 1123490,
+        "volume": 3088192,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275540000,
+        "open": 1123540,
+        "high": 1123710,
+        "low": 1123280,
+        "close": 1123510,
+        "volume": 3577216,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275600000,
+        "open": 1123360,
+        "high": 1123690,
+        "low": 1123290,
+        "close": 1123430,
+        "volume": 3530496,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275660000,
+        "open": 1123280,
+        "high": 1123350,
+        "low": 1123090,
+        "close": 1123090,
+        "volume": 2051840,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275720000,
+        "open": 1123080,
+        "high": 1123080,
+        "low": 1122690,
+        "close": 1122930,
+        "volume": 3042688,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275780000,
+        "open": 1122930,
+        "high": 1123140,
+        "low": 1122760,
+        "close": 1123140,
+        "volume": 3061408,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275840000,
+        "open": 1123120,
+        "high": 1123200,
+        "low": 1122870,
+        "close": 1122920,
+        "volume": 4196288,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275900000,
+        "open": 1122960,
+        "high": 1123010,
+        "low": 1122640,
+        "close": 1122970,
+        "volume": 2734720,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702275960000,
+        "open": 1123040,
+        "high": 1123060,
+        "low": 1122810,
+        "close": 1122930,
+        "volume": 2554784,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276020000,
+        "open": 1122980,
+        "high": 1123030,
+        "low": 1122750,
+        "close": 1122960,
+        "volume": 2725824,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276080000,
+        "open": 1122990,
+        "high": 1123050,
+        "low": 1122590,
+        "close": 1122590,
+        "volume": 3369696,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276140000,
+        "open": 1122730,
+        "high": 1122730,
+        "low": 1122500,
+        "close": 1122590,
+        "volume": 2779904,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276200000,
+        "open": 1122600,
+        "high": 1122610,
+        "low": 1122130,
+        "close": 1122150,
+        "volume": 2604480,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276260000,
+        "open": 1122140,
+        "high": 1122460,
+        "low": 1122140,
+        "close": 1122370,
+        "volume": 2949408,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276320000,
+        "open": 1122050,
+        "high": 1122200,
+        "low": 1121610,
+        "close": 1121610,
+        "volume": 2223104,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276380000,
+        "open": 1121670,
+        "high": 1121800,
+        "low": 1121630,
+        "close": 1121780,
+        "volume": 2730784,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276440000,
+        "open": 1121740,
+        "high": 1121890,
+        "low": 1121660,
+        "close": 1121660,
+        "volume": 3041312,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276500000,
+        "open": 1121670,
+        "high": 1121750,
+        "low": 1121590,
+        "close": 1121630,
+        "volume": 3260704,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276560000,
+        "open": 1121610,
+        "high": 1121830,
+        "low": 1121390,
+        "close": 1121650,
+        "volume": 2962880,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276620000,
+        "open": 1121590,
+        "high": 1121820,
+        "low": 1121550,
+        "close": 1121550,
+        "volume": 2099424,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276680000,
+        "open": 1121630,
+        "high": 1121630,
+        "low": 1121190,
+        "close": 1121370,
+        "volume": 2246784,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276740000,
+        "open": 1121470,
+        "high": 1121470,
+        "low": 1121050,
+        "close": 1121050,
+        "volume": 3621408,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276800000,
+        "open": 1121110,
+        "high": 1121110,
+        "low": 1120520,
+        "close": 1120520,
+        "volume": 4477088,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276860000,
+        "open": 1120460,
+        "high": 1120490,
+        "low": 1120320,
+        "close": 1120460,
+        "volume": 2776896,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276920000,
+        "open": 1120340,
+        "high": 1120750,
+        "low": 1120340,
+        "close": 1120650,
+        "volume": 2887200,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702276980000,
+        "open": 1120660,
+        "high": 1120830,
+        "low": 1120490,
+        "close": 1120720,
+        "volume": 2953728,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277040000,
+        "open": 1120800,
+        "high": 1121720,
+        "low": 1120800,
+        "close": 1121340,
+        "volume": 2898272,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277100000,
+        "open": 1121540,
+        "high": 1121750,
+        "low": 1121370,
+        "close": 1121570,
+        "volume": 3278112,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277160000,
+        "open": 1121670,
+        "high": 1121870,
+        "low": 1121590,
+        "close": 1121630,
+        "volume": 2323904,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277220000,
+        "open": 1121590,
+        "high": 1121710,
+        "low": 1121510,
+        "close": 1121510,
+        "volume": 4344000,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277280000,
+        "open": 1122030,
+        "high": 1122590,
+        "low": 1122030,
+        "close": 1122590,
+        "volume": 3977088,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277340000,
+        "open": 1122230,
+        "high": 1123480,
+        "low": 1122230,
+        "close": 1123480,
+        "volume": 7125600,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277400000,
+        "open": 1123540,
+        "high": 1123940,
+        "low": 1123460,
+        "close": 1123940,
+        "volume": 6603296,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277460000,
+        "open": 1123780,
+        "high": 1124540,
+        "low": 1123780,
+        "close": 1124540,
+        "volume": 5652128,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277520000,
+        "open": 1124470,
+        "high": 1124920,
+        "low": 1124460,
+        "close": 1124890,
+        "volume": 6082080,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277580000,
+        "open": 1124870,
+        "high": 1125050,
+        "low": 1124770,
+        "close": 1124920,
+        "volume": 6839200,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277640000,
+        "open": 1124760,
+        "high": 1125070,
+        "low": 1124710,
+        "close": 1124880,
+        "volume": 3529216,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277700000,
+        "open": 1124870,
+        "high": 1124870,
+        "low": 1124590,
+        "close": 1124670,
+        "volume": 4068096,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277760000,
+        "open": 1124600,
+        "high": 1124600,
+        "low": 1124100,
+        "close": 1124100,
+        "volume": 6939904,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277820000,
+        "open": 1124120,
+        "high": 1124150,
+        "low": 1123960,
+        "close": 1124130,
+        "volume": 4071904,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277880000,
+        "open": 1124060,
+        "high": 1124150,
+        "low": 1123940,
+        "close": 1124010,
+        "volume": 3117376,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702277940000,
+        "open": 1123890,
+        "high": 1124070,
+        "low": 1123610,
+        "close": 1123720,
+        "volume": 1936320,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278000000,
+        "open": 1123770,
+        "high": 1124260,
+        "low": 1123770,
+        "close": 1124080,
+        "volume": 2568480,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278060000,
+        "open": 1123950,
+        "high": 1124130,
+        "low": 1123950,
+        "close": 1124060,
+        "volume": 2753216,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278120000,
+        "open": 1124090,
+        "high": 1124340,
+        "low": 1124030,
+        "close": 1124150,
+        "volume": 2691680,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278180000,
+        "open": 1124200,
+        "high": 1124490,
+        "low": 1124140,
+        "close": 1124410,
+        "volume": 2161216,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278240000,
+        "open": 1124420,
+        "high": 1124500,
+        "low": 1124270,
+        "close": 1124300,
+        "volume": 2352800,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278300000,
+        "open": 1124190,
+        "high": 1124550,
+        "low": 1124150,
+        "close": 1124310,
+        "volume": 2423008,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278360000,
+        "open": 1124490,
+        "high": 1124880,
+        "low": 1124490,
+        "close": 1124790,
+        "volume": 4254464,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278420000,
+        "open": 1124720,
+        "high": 1125100,
+        "low": 1124620,
+        "close": 1125010,
+        "volume": 4280128,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278480000,
+        "open": 1125100,
+        "high": 1125710,
+        "low": 1125100,
+        "close": 1125710,
+        "volume": 4476480,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278540000,
+        "open": 1125850,
+        "high": 1126100,
+        "low": 1125770,
+        "close": 1126020,
+        "volume": 8960128,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278600000,
+        "open": 1126110,
+        "high": 1127000,
+        "low": 1126110,
+        "close": 1126790,
+        "volume": 5502976,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278660000,
+        "open": 1126830,
+        "high": 1126880,
+        "low": 1126670,
+        "close": 1126750,
+        "volume": 5176832,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278720000,
+        "open": 1126770,
+        "high": 1126950,
+        "low": 1126760,
+        "close": 1126850,
+        "volume": 4822784,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278780000,
+        "open": 1127000,
+        "high": 1127000,
+        "low": 1126700,
+        "close": 1126810,
+        "volume": 4239872,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278840000,
+        "open": 1126750,
+        "high": 1126750,
+        "low": 1126410,
+        "close": 1126510,
+        "volume": 3213632,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278900000,
+        "open": 1126510,
+        "high": 1126510,
+        "low": 1126010,
+        "close": 1126010,
+        "volume": 3392768,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702278960000,
+        "open": 1126100,
+        "high": 1126260,
+        "low": 1125500,
+        "close": 1125550,
+        "volume": 8338816,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279020000,
+        "open": 1125420,
+        "high": 1125530,
+        "low": 1125300,
+        "close": 1125410,
+        "volume": 3056832,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279080000,
+        "open": 1125400,
+        "high": 1125400,
+        "low": 1124920,
+        "close": 1125020,
+        "volume": 3843008,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279140000,
+        "open": 1125040,
+        "high": 1125120,
+        "low": 1124970,
+        "close": 1125060,
+        "volume": 2642496,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279200000,
+        "open": 1124920,
+        "high": 1125040,
+        "low": 1124780,
+        "close": 1124960,
+        "volume": 3146560,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279260000,
+        "open": 1125000,
+        "high": 1125000,
+        "low": 1124740,
+        "close": 1124910,
+        "volume": 4091712,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279320000,
+        "open": 1124750,
+        "high": 1125000,
+        "low": 1124640,
+        "close": 1124720,
+        "volume": 4085184,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279380000,
+        "open": 1124680,
+        "high": 1125440,
+        "low": 1124680,
+        "close": 1125380,
+        "volume": 3068096,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279440000,
+        "open": 1125370,
+        "high": 1125520,
+        "low": 1125040,
+        "close": 1125040,
+        "volume": 4064704,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279500000,
+        "open": 1125190,
+        "high": 1125490,
+        "low": 1125150,
+        "close": 1125380,
+        "volume": 3802496,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279560000,
+        "open": 1125400,
+        "high": 1125640,
+        "low": 1125400,
+        "close": 1125610,
+        "volume": 4168640,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279620000,
+        "open": 1125570,
+        "high": 1125680,
+        "low": 1125360,
+        "close": 1125680,
+        "volume": 6837440,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279680000,
+        "open": 1125410,
+        "high": 1125890,
+        "low": 1125410,
+        "close": 1125770,
+        "volume": 4182144,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279740000,
+        "open": 1126100,
+        "high": 1126310,
+        "low": 1125360,
+        "close": 1125360,
+        "volume": 6809984,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702279800000,
+        "open": 1125430,
+        "high": 1125430,
+        "low": 1125430,
+        "close": 1125430,
+        "volume": 869184,
+        "ticker": "VNINDEX"
+    },
+    {
+        "time": 1702280700000,
+        "open": 1125500,
+        "high": 1125500,
+        "low": 1125500,
+        "close": 1125500,
+        "volume": 42831936,
+        "ticker": "VNINDEX"
+    }
+]

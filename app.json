@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "so",
-    "slug": "so",
+    "name": "SmartOne",
+    "slug": "SmartOne",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.truongbodoi821.SmartOne"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +26,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "29e06f69-4a57-418f-893c-679a22812ef5"
+      }
     }
   }
 }
