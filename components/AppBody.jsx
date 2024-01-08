@@ -191,7 +191,7 @@ const styles = StyleSheet.create({
   },
   placeHolderBox: {
     width: width,
-    height: 32,
+    height: 29,
     backgroundColor: '#fff',
     alignItems: "center",
   },
@@ -206,6 +206,7 @@ const styles = StyleSheet.create({
   draggableContent: {
     backgroundColor: '#fff',
     width: '100%',
+    // paddingTop: -10,
   },
   textDMNG: {
     fontSize: 17,
@@ -215,7 +216,7 @@ const styles = StyleSheet.create({
   portfolioHeader: {
     // marginBottom: 15,
     marginLeft: width*0.04,
-    marginTop: -3,
+    // marginTop: -3,
   },
   headerText: {
     fontSize: 22,
