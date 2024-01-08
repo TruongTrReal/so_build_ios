@@ -257,7 +257,17 @@ const Modify = () => {
         }
     };
   
-
+    const handleSummary = (x) => {
+        if (x==undefined) {
+          return fakedata = {
+            total_asset: 0,
+            total_cash: 0,
+            margin_ratio: 100
+          };
+        } else {
+          return x
+        }
+      };
 
     return (
         <ScrollView style={styles.container}>
@@ -276,10 +286,10 @@ const Modify = () => {
         {loading ? (
             <ActivityIndicator size="large" color="#0000ff" />
         ) : (
-            summary && (
+            handleSummary(summary) && (
             <View style={styles.box}>
                 <Text>Tổng quan tài sản:</Text>
-                <Text>{`Tài sản ròng: ${((summary.total_asset ?? 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))}`}</Text>
+                <Text>{`Tài sản ròng: ${((handleSummary(summary).total_asset ?? 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))}`}</Text>
                 <TextInput
                     style={styles.input}
                     placeholder="1000000,..."
@@ -287,7 +297,7 @@ const Modify = () => {
                     onChangeText={(text) => setNewSummary((prev) => ({ ...prev, total_asset: text }))}
                     value={newSummary.total_asset}
                 />
-                <Text>{`Sức mua: ${((summary.total_cash ?? 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))}`}</Text>
+                <Text>{`Sức mua: ${((handleSummary(summary).total_cash ?? 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))}`}</Text>
                 <TextInput
                     style={styles.input}
                     placeholder="1000000,..."
@@ -295,7 +305,7 @@ const Modify = () => {
                     onChangeText={(text) =>  setNewSummary((prev) => ({ ...prev, total_cash: text }))}
                     value={newSummary.total_cash}
                 />
-                <Text>{`Tỷ lệ an toàn: ${(summary.margin_ratio ?? 0)}`} %</Text>
+                <Text>{`Tỷ lệ an toàn: ${(handleSummary(summary).margin_ratio ?? 0)}`} %</Text>
                 <TextInput
                     style={styles.input}
                     placeholder="100,00 , 69,69 ,..."
