@@ -10,13 +10,12 @@ const PortfolioSummary = () => {
   const dispatch = useDispatch();
 
   // State for the toggle switch
-  const [volumeHidden, setVolumeHiddenn] = useState(false);
-  const [isProfitHidden, setProfitHidden] = useState(false);
+  const [volumeHidden, setVolumeHiddenn] = useState(true);
+  const [isProfitHidden, setProfitHidden] = useState(true);
 
   const accountPortfolioSummary  = useSelector((state) => state.accountPortfolioSummary);
   const gainHiddenRedux  = useSelector((state) => state.gain_hidden);
-  const volumeHiddenRedux  = useSelector((state) => state.volume_hidden);
-
+0
   const toggleProfitHidden = () => {
     setProfitHidden(prevState => !prevState);
     dispatch(setGainHidden(isProfitHidden))
@@ -217,7 +216,7 @@ const styles = StyleSheet.create({
   summaryValue: {
     marginTop: 2,
     color: 'black',
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: '400',
   },
   summaryPercentage: {
@@ -249,7 +248,7 @@ const styles = StyleSheet.create({
   lossValue: {
     marginTop: 2,
     color: 'black',
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: '400',
   },
   divider: {

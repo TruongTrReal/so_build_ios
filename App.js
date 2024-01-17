@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, View, SafeAreaView, ScrollView, Dimensions, Image } from 'react-native';
+import { StyleSheet, View, SafeAreaView, ScrollView, Dimensions, Image, Text } from 'react-native';
 import { TabHeader, AppBody, BuySell, Modify } from './components/zzindex.jsx';
 import { Provider } from 'react-redux';
 import store from './redux/store';

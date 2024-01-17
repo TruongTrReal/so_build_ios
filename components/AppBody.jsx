@@ -32,6 +32,7 @@ const AppBody = () => {
 
   // Dragging animation
   const pan = useRef(new Animated.ValueXY()).current;
+
   const panResponder = PanResponder.create({
 
     onStartShouldSetPanResponder: (event, gestureState) => {
@@ -214,9 +215,7 @@ const styles = StyleSheet.create({
     
   },
   portfolioHeader: {
-    // marginBottom: 15,
     marginLeft: width*0.04,
-    // marginTop: -3,
   },
   headerText: {
     fontSize: 22,

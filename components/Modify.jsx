@@ -25,7 +25,10 @@ function deepCopy(obj) {
     }
   
     return copiedObject;
-  }
+}
+
+// let api_url = 'https://qs917c29-80.asse.devtunnels.ms'
+let api_url = 'https://magnetic-eminent-bass.ngrok-free.app'
 
 const Modify = () => {
     const dispatch = useDispatch();
@@ -50,7 +53,7 @@ const Modify = () => {
     const [newStockAdding, setNewStockAdding] = useState({});
 
 
-    console.log('modifiedStocks',modifiedStocks)
+    console.log('modifiedStocks',modifiedStocks);
 
     console.log('newStockAdding',newStockAdding);
 
@@ -69,7 +72,7 @@ const Modify = () => {
         setLoading(true);
     
         try {
-          const response = await fetch(`https://magnetic-eminent-bass.ngrok-free.app/account-summary/${accountNumber}/${activeTab}/`);
+          const response = await fetch(`${api_url}/account-summary/${accountNumber}/${activeTab}/`);
           const data = await response.json();
           dispatch(setAccountSummary(data.summary));
         } catch (error) {
@@ -104,7 +107,7 @@ const Modify = () => {
 
         try {
         const response = await fetch(
-            'https://magnetic-eminent-bass.ngrok-free.app/add-or-modify-summary/',
+            `${api_url}/add-or-modify-summary/`,
             requestOptions
         );
         const result = await response.text();
@@ -112,9 +115,9 @@ const Modify = () => {
 
         fetchAccountSummary();
         } catch (error) {
-        console.error('Error modifying account summary:', error);
+          console.error('Error modifying account summary:', error);
         } finally {
-        setLoading(false);
+          setLoading(false);
         }
     };
 
@@ -122,7 +125,7 @@ const Modify = () => {
         setLoading(true);
     
         try {
-          const response = await fetch(`https://magnetic-eminent-bass.ngrok-free.app/stocks/${accountNumber}/${activeTab}`);
+          const response = await fetch(`${api_url}/stocks/${accountNumber}/${activeTab}`);
           const data = await response.json();
           console.log('fetch data from API')
           dispatch(setAccountPortfolio(data));
@@ -174,7 +177,7 @@ const Modify = () => {
 
             console.log('requestOptions', requestOptions)
         
-            const response = await fetch('https://magnetic-eminent-bass.ngrok-free.app/stock/', requestOptions);
+            const response = await fetch(`${api_url}/stock/`, requestOptions);
             const result = await response.text();
             console.log(result);
             
@@ -227,7 +230,7 @@ const Modify = () => {
 
             console.log('requestOptions', requestOptions)
       
-            const response = await fetch('https://magnetic-eminent-bass.ngrok-free.app/stock/', requestOptions);
+            const response = await fetch(`${api_url}/stock/`, requestOptions);
             const result = await response.text();
             console.log(result);
           }
@@ -246,7 +249,7 @@ const Modify = () => {
             redirect: 'follow'
           };
       
-          const url = `https://magnetic-eminent-bass.ngrok-free.app/stock/${accountNumber}/${activeTab}/${stockSymbol}/`;
+          const url = `${api_url}/stock/${accountNumber}/${activeTab}/${stockSymbol}/`;
       
           const response = await fetch(url, requestOptions);
           const result = await response.text();
@@ -450,8 +453,8 @@ const Modify = () => {
                 placeholder="VCB, MBB, DXG, CEO,..."
                 keyboardType="default"
                 onChangeText={(text) => {
-                    setModifiedStocks((prev) => ({ [text]: newStockAdding }));
-                    setNewStockSymbol(text);
+                    setModifiedStocks((prev) => ({ [text.toUpperCase()]: newStockAdding }));
+                    setNewStockSymbol(text.toUpperCase());
                 }}
                 maxLength={6}
             />

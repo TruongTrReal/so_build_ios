@@ -20,11 +20,14 @@ const FinancialSummary = () => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   };
 
+  // let api_url = 'https://qs917c29-80.asse.devtunnels.ms'
+  let api_url = 'https://magnetic-eminent-bass.ngrok-free.app'
+
   const fetchAccountSummary = async () => {
     setLoading(true);
 
     try {
-      const response = await fetch(`https://magnetic-eminent-bass.ngrok-free.app/account-summary/${accountNumber}/${activeTab}/`);
+      const response = await fetch(`${api_url}/account-summary/${accountNumber}/${activeTab}/`);
       const data = await response.json();
       dispatch(setAccountSummary(data.summary));
     } catch (error) {

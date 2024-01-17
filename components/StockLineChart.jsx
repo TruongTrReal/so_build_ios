@@ -4,6 +4,9 @@ import { AreaChart, Path } from 'react-native-svg-charts';
 
 const { height, width } = Dimensions.get('window');
 
+// let api_url = 'https://qs917c29-80.asse.devtunnels.ms'
+let api_url = 'https://magnetic-eminent-bass.ngrok-free.app'
+
 const StockLineChart = ({ indexName, onExportChange }) => {
   let COLOR = '#ce5a63';
 
@@ -17,10 +20,10 @@ const StockLineChart = ({ indexName, onExportChange }) => {
 
   useEffect(() => {
     const fetchStockData = async () => {
-      console.log('calling API');
+      // console.log('calling API');
       try {
         const response = await fetch(
-          `https://magnetic-eminent-bass.ngrok-free.app/stockapi?data_type=index&stock_name=${indexName}`
+          `${api_url}/stockapi/?data_type=index&stock_name=${indexName}`
         );
         const data = await response.json();
 
@@ -52,10 +55,10 @@ const StockLineChart = ({ indexName, onExportChange }) => {
             }
           }
         } else {
-          console.error('Invalid stock data format:', data);
+          console.error('Invalid stock index format:', data);
         }
       } catch (error) {
-        console.error('Error fetching stock data:', error);
+        console.error('Error fetching index data:', error);
       } finally {
         setLoading(false);
       }

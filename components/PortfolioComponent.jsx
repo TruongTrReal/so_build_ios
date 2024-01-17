@@ -5,6 +5,9 @@ import { setAccountPortfolio, setAccountPortfolioSummary } from '../redux/action
 
 const { width, height } = Dimensions.get('window');
 
+// let api_url = 'https://qs917c29-80.asse.devtunnels.ms'
+let api_url = 'https://magnetic-eminent-bass.ngrok-free.app'
+
 const PortfolioComponent = () => {
 
   const dispatch = useDispatch();
@@ -16,17 +19,17 @@ const PortfolioComponent = () => {
   const volumeHiddenRedux  = useSelector((state) => state.volume_hidden);
   
   const [loading, setLoading] = useState(false);
-  const [stocksData, setStocksData] = useState(null);
+  const [stocksData, setStocksData] = useState(accountPortfolio);
   const [selectedItems, setSelectedItems] = useState({});
 
-
+  console.log(accountNumber);
   const fetchStocksData = async () => {
     setLoading(true);
 
     try {
-      const response = await fetch(`https://magnetic-eminent-bass.ngrok-free.app/stocks/${accountNumber}/${activeTab}`);
+      const response = await fetch(`${api_url}/stocks/${accountNumber}/${activeTab}`);
       const data = await response.json();
-      console.log('fetch data from API')
+      console.log('fetch data from API', data)
       dispatch(setAccountPortfolio(data));
       setStocksData(data);
     } catch (error) {
@@ -52,7 +55,7 @@ const PortfolioComponent = () => {
     if (x!==undefined) {
 
       modifiedPortfolio = x.map(item => {
-        const averagePrice = ((item.owning_price - (item.owning_price * 0.0013)) / 1000).toFixed(2);
+        const averagePrice = ((item.owning_price + (item.owning_price * 0.0013)) / 1000).toFixed(2);
         const marketPrice = (item.market_price / 1000).toFixed(2);
         const gainLoss = ((marketPrice - averagePrice) * item.total_volume * 1000).toFixed(0);
         const gainPercentage = (((marketPrice - averagePrice) / averagePrice) * 100);
@@ -88,7 +91,7 @@ const PortfolioComponent = () => {
   };
   
   // Calculate gainLoss and gainPercentage for the portfolioData
-  let { modifiedPortfolio, totalGainLoss, totalGainPercentage, totalAsset, totalMarketValue, todayChange } = ModifyData(accountPortfolio.stocks);
+  let { modifiedPortfolio, totalGainLoss, totalGainPercentage, totalAsset, totalMarketValue, todayChange } = ModifyData(stocksData.stocks);
   
 
   dispatch(setAccountPortfolioSummary({
