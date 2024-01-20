@@ -20,7 +20,7 @@ export default function App() {
           <View style={styles.wrapper}>
             <TabHeader style={styles.header} />
             <View style={styles.body}>
-              <Image style={styles.event} source={require('./assets/event11.jpg')} resizeMode='stretch'/>
+              {/* <Image style={styles.event} source={require('./assets/event11.jpg')} resizeMode='stretch'/> */}
 
               <AppBody />
             </View>
